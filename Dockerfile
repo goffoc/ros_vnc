@@ -124,8 +124,17 @@ RUN rosdep update
 #     ros-${ROS_DISTRO}-ros-gz && \
 #     rm -rf /var/lib/apt/lists/*; \
 #     fi
+
+# Install Gazebo
 RUN apt-get update
 RUN apt-get install -y ros-jazzy-ros-gz
+
+# install VS Code (code-server)
+RUN curl -fsSL https://code-server.dev/install.sh | sh
+
+# install VS Code extensions
+RUN code-server --install-extension redhat.vscode-yaml \
+                --install-extension ms-python.python
 
 # Enable apt-get completion after running `apt-get update` in the container
 RUN rm /etc/apt/apt.conf.d/docker-clean
