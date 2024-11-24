@@ -139,8 +139,9 @@ RUN code-server --install-extension redhat.vscode-yaml \
 # Enable apt-get completion after running `apt-get update` in the container
 RUN rm /etc/apt/apt.conf.d/docker-clean
 
-COPY ./entrypoint.sh /
-ENTRYPOINT [ "/bin/bash", "-c", "/entrypoint.sh" ]
+COPY ./entrypoint_jetson.sh /
+ENTRYPOINT [ "/bin/bash", "-c", "/entrypoint_jetson.sh" ]
+#ENTRYPOINT [ "/bin/bash" ]
 
 ENV USER ubuntu
 ENV PASSWD ubuntu
