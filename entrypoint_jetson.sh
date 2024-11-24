@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # Create User
 USER=${USER:-root}
@@ -358,7 +358,4 @@ echo "NOTE 1: --security-opt seccomp=unconfined flag is required to launch Ubunt
 echo -e 'See \e]8;;https://github.com/Tiryoh/docker-ros2-desktop-vnc/pull/56\e\\https://github.com/Tiryoh/docker-ros2-desktop-vnc/pull/56\e]8;;\e\\'
 echo "============================================================================================"
 
-#exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
-/usr/bin/vncserver :1 -geometry 1920x1080 -depth 24
-websockify --web=/usr/lib/novnc 80 localhost:5901
-/bin/bash
+exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
