@@ -1,4 +1,4 @@
-#!/usr/bin/sh
+#!/bin/sh
 
 #Build Docker Image
-cd /home/chris/dockerfiles/vnc_jazzy && docker buildx build --platform=linux/arm64 --progress=plain -t myros2 .
+cd /home/chris/ros_vnc && docker buildx build --platform=linux/arm64 --progress=plain -t myros2 .

@@ -141,7 +141,6 @@ RUN rm /etc/apt/apt.conf.d/docker-clean
 
 COPY ./entrypoint.sh /
 ENTRYPOINT [ "/bin/bash", "-c", "/entrypoint.sh" ]
-#ENTRYPOINT [ "/bin/bash" ]
 
 ENV USER ubuntu
 ENV PASSWD ubuntu
