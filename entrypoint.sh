@@ -361,4 +361,5 @@ echo "==========================================================================
 #exec /bin/tini -- supervisord -n -c /etc/supervisor/supervisord.conf
 /usr/bin/vncserver :1 -geometry 1920x1080 -depth 24
 websockify --web=/usr/lib/novnc 80 localhost:5901
+echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc
 /bin/bash
