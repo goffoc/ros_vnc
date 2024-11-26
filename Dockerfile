@@ -139,7 +139,7 @@ RUN code-server --install-extension redhat.vscode-yaml \
 # Enable apt-get completion after running `apt-get update` in the container
 RUN rm /etc/apt/apt.conf.d/docker-clean
 
-RUN "/opt/ros/jazzy/setup.bash" >> /root/.bashrc
+RUN echo "/opt/ros/jazzy/setup.bash" >> /root/.bashrc
 
 COPY ./entrypoint.sh /
 ENTRYPOINT [ "/bin/bash", "-c", "/entrypoint.sh" ]
