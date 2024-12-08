@@ -125,6 +125,7 @@ RUN rosdep update
 #     rm -rf /var/lib/apt/lists/*; \
 #     fi
 
+
 # Install Gazebo
 RUN apt-get update
 RUN apt-get install -y ros-jazzy-ros-gz ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui
