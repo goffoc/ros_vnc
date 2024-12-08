@@ -127,7 +127,7 @@ RUN rosdep update
 
 # Install Gazebo
 RUN apt-get update
-RUN apt-get install -y ros-jazzy-ros-gz
+RUN apt-get install -y ros-jazzy-ros-gz ros-jazzy-joint-state-publisher ros-jazzy-joint-state-publisher-gui
 
 # install VS Code (code-server)
 RUN curl -fsSL https://code-server.dev/install.sh | sh
