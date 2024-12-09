@@ -1,0 +1,83 @@
+[0.028s] Invoking command in '/ros_vnc/dev_ws/src/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros_vnc/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_vnc/dev_ws/src/install/my_package
+[0.537s] -- The C compiler identification is GNU 13.2.0
+[0.892s] -- The CXX compiler identification is GNU 13.2.0
+[0.935s] -- Detecting C compiler ABI info
+[1.135s] -- Detecting C compiler ABI info - done
+[1.151s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.152s] -- Detecting C compile features
+[1.153s] -- Detecting C compile features - done
+[1.170s] -- Detecting CXX compiler ABI info
+[1.370s] -- Detecting CXX compiler ABI info - done
+[1.387s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.387s] -- Detecting CXX compile features
+[1.388s] -- Detecting CXX compile features - done
+[1.426s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.741s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.888s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.045s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.293s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.293s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.296s] -- Added test 'lint_cmake' to check CMake code style
+[2.299s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.306s] -- Added test 'xmllint' to check XML markup files
+[2.318s] -- Configuring done (2.2s)
+[2.326s] -- Generating done (0.0s)
+[2.328s] -- Build files have been written to: /ros_vnc/dev_ws/src/build/my_package
+[2.338s] Invoked command in '/ros_vnc/dev_ws/src/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /ros_vnc/dev_ws/src/my_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/ros_vnc/dev_ws/src/install/my_package
+[2.341s] Invoking command in '/ros_vnc/dev_ws/src/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros_vnc/dev_ws/src/build/my_package -- -j4 -l4
+[2.422s] Invoked command in '/ros_vnc/dev_ws/src/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /ros_vnc/dev_ws/src/build/my_package -- -j4 -l4
+[2.486s] Invoking command in '/ros_vnc/dev_ws/src/build/my_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros_vnc/dev_ws/src/build/my_package
+[2.502s] -- Install configuration: ""
+[2.503s] -- Execute custom install script
+[2.504s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/description/example_gazebo.xacro
+[2.528s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/description/example_include.xacro
+[2.546s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/description/example_robot.urdf.xacro
+[2.568s] [33mCMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+[2.569s]   Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+[2.569s]   symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+[2.569s]   Use the cmake_policy command to set the policy and suppress this warning.
+[2.569s] Call Stack (most recent call first):
+[2.569s]   ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:314 (ament_cmake_symlink_install_directory)
+[2.569s]   cmake_install.cmake:46 (include)
+[2.569s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.569s] [0m
+[2.570s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/build/.built_by
+[2.586s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/build/COLCON_IGNORE
+[2.604s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/.colcon_install_layout
+[2.627s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/COLCON_IGNORE
+[2.645s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/_local_setup_util_ps1.py
+[2.662s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/_local_setup_util_sh.py
+[2.680s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/local_setup.bash
+[2.698s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/local_setup.ps1
+[2.719s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/local_setup.sh
+[2.738s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/local_setup.zsh
+[2.756s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/setup.bash
+[2.774s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/setup.ps1
+[2.792s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/setup.sh
+[2.814s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/install/setup.zsh
+[2.835s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/COLCON_IGNORE
+[2.853s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/build_2024-12-08_11-25-13/events.log
+[2.871s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/build_2024-12-08_11-25-13/logger_all.log
+[2.889s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/latest/events.log
+[2.907s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/latest/logger_all.log
+[2.928s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/latest_build/events.log
+[2.946s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/log/latest_build/logger_all.log
+[2.964s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/rsp.launch.py
+[2.983s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/launch/rsp_sim.launch.py
+[3.001s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/worlds/test_world.world
+[3.024s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/ament_index/resource_index/package_run_dependencies/my_package
+[3.043s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/ament_index/resource_index/parent_prefix_path/my_package
+[3.062s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/environment/ament_prefix_path.sh
+[3.081s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/environment/ament_prefix_path.dsv
+[3.100s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/environment/path.sh
+[3.128s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/environment/path.dsv
+[3.149s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/local_setup.bash
+[3.167s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/local_setup.sh
+[3.186s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/local_setup.zsh
+[3.204s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/local_setup.dsv
+[3.226s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/package.dsv
+[3.245s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/ament_index/resource_index/packages/my_package
+[3.263s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/cmake/my_packageConfig.cmake
+[3.281s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/cmake/my_packageConfig-version.cmake
+[3.299s] -- Symlinking: /ros_vnc/dev_ws/src/install/my_package/share/my_package/package.xml
+[3.324s] Invoked command in '/ros_vnc/dev_ws/src/build/my_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /ros_vnc/dev_ws/src/build/my_package
